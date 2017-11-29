@@ -5,7 +5,9 @@ class Node {
         this.next = {};
     }
     toString() {
-        return "[ Value: " + String(this.val) + " Next:" + String(this.next.val) + " ]";
+         if(this.next===null){var mes=null;}
+        else{mes=this.next.val; String(mes);}
+        return "[ Value: " + String(this.val) + " Next:" + mes + " ]";
 
     }
 
